@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la \"C:\\\\Projeto web\\\\simulador-de-confinamento-de-bovinos\"/.env*)",
+      "Bash(npm run:*)",
+      "Bash(firebase deploy:*)",
+      "Bash(powershell -Command \":*)",
+      "Bash(powershell -ExecutionPolicy Bypass -File \"C:\\\\Temp\\\\make-zip.ps1\")",
+      "Bash(powershell -Command \"Get-Process powershell | Select-Object Id, StartTime, CPU | Format-Table -AutoSize\")",
+      "Bash(powershell -Command \"Stop-Process -Id 16888 -Force; Write-Output ''Processo encerrado''\")",
+      "Bash(az --version)",
+      "Bash(az login:*)",
+      "Bash(az webapp:*)",
+      "Bash(powershell -ExecutionPolicy Bypass -File \"C:\\\\Temp\\\\get-latest-log4.ps1\")",
+      "Bash(powershell -ExecutionPolicy Bypass -File \"C:\\\\Temp\\\\get-app-docker-log.ps1\")",
+      "Bash(npm install:*)"
+    ]
+  }
+}

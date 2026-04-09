@@ -1,0 +1,5 @@
+{
+  "name": "Simulador de Confinamento de Bovinos",
+  "description": "Simule custos, receitas e lucro do confinamento de bovinos e compare cenários de mercado em tempo real.",
+  "requestFramePermissions": []
+}

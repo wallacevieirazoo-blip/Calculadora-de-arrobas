@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* Impressão: aba "Ver e comparar" (classe print-compare-mode no body durante window.print) */
+@media print {
+  body.print-compare-mode {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  body.print-compare-mode header {
+    display: none !important;
+  }
+
+  body.print-compare-mode .compare-print-sidebar,
+  body.print-compare-mode .compare-print-mobile-summary,
+  body.print-compare-mode .compare-print-hide {
+    display: none !important;
+  }
+
+  body.print-compare-mode main {
+    display: block !important;
+    max-width: none !important;
+    padding: 1rem !important;
+  }
+
+  body.print-compare-mode .compare-print-main-col {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  body.print-compare-mode .compare-print-avoid-break {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
